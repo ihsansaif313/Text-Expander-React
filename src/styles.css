@@ -1,0 +1,173 @@
+:root {
+    --space-black: #0a0e17;
+    --cosmic-purple: #4c1d95;
+    --starlight-blue: #38bdf8;
+    --nebula-pink: #db2777;
+    --galaxy-gradient: linear-gradient(
+      45deg, 
+      #0f172a 0%,
+      #1e3a8a 30%,
+      #6d28d9 60%,
+      #db2777 100%
+    );
+  }
+  
+  .cosmic-container {
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .stellar-bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: var(--space-black);
+    z-index: -1;
+  }
+  
+  .star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: white;
+    animation: twinkle 1.5s infinite alternate;
+  }
+  
+  @keyframes twinkle {
+    0% { opacity: 0.1; }
+    100% { opacity: 1; }
+  }
+  
+  .app-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  
+  .galactic-title {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+    background: var(--galaxy-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .galactic-title span {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 8px rgba(76, 29, 149, 0.4);
+  }
+  
+  .text-expander {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(56, 189, 248, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .text-expander::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(
+      45deg,
+      rgba(56, 189, 248, 0.2),
+      rgba(219, 39, 119, 0.2),
+      transparent
+    );
+    z-index: -1;
+  }
+  
+  .text-expander:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
+      inset 0 0 12px rgba(56, 189, 248, 0.1);
+  }
+  
+  .text-content {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .expand-button {
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: linear-gradient(45deg, var(--btn-color), 
+                color-mix(in srgb, var(--btn-color) 30%, white));
+    color: white !important;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .expand-button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      45deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.2),
+      transparent 70%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .expand-button:hover::after {
+    opacity: 1;
+  }
+  
+  .expand-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 24px color-mix(in srgb, var(--btn-color) 30%, transparent);
+  }
+  
+  .nebula-box {
+    border-left: 4px solid var(--nebula-pink);
+    background: linear-gradient(
+      45deg,
+      rgba(15, 23, 42, 0.9),
+      rgba(77, 43, 117, 0.7)
+    );
+  }
+  
+  .supernova-box {
+    background: linear-gradient(
+      45deg,
+      rgba(15, 23, 42, 0.9),
+      rgba(232, 121, 249, 0.1)
+    );
+    border: 1px solid rgba(232, 121, 249, 0.2);
+  }
+  
+  @keyframes cosmicGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
