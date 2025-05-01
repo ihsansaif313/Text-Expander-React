@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Text-Expander-React/static/css/main.337ac59d.css",
+    "main.js": "/Text-Expander-React/static/js/main.62138943.js",
+    "index.html": "/Text-Expander-React/index.html",
+    "main.337ac59d.css.map": "/Text-Expander-React/static/css/main.337ac59d.css.map",
+    "main.62138943.js.map": "/Text-Expander-React/static/js/main.62138943.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.337ac59d.css",
+    "static/js/main.62138943.js"
+  ]
+}
