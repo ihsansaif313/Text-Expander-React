@@ -1,71 +1,94 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <br>
+  <img src="https://i.ibb.co/4t8M7y0/cosmic-logo.png" alt="🛰️" width="400">
+  <br>
+  Cosmic Text Expander 🌌
+  <br>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">A Stellar React Component for Elegant Content Expansion</h4>
 
-## Available Scripts
+<div align="center">
+  
+[![React Version](https://img.shields.io/badge/react-%5E18.2.0-61dafb?logo=react&style=for-the-badge)](https://reactjs.org/)
+[![License](https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Demo](https://img.shields.io/badge/live_demo-available-9cf?style=for-the-badge&logo=vercel)](https://ihsansaif313.github.io/Text-Expander-React/)
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+<div align="center">
+  <img src="https://i.ibb.co/7Ybw7tK/cosmic-demo.gif" alt="Demo Animation" width="800">
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<div align="center">
+  
+| **Dynamic Content**          | **Customization**             | **Visual Effects**           |
+|------------------------------|-------------------------------|------------------------------|
+| 🌟 Intelligent text truncation | 🎨 Themeable color schemes    | 🌠 Animated particle effects |
+| 📖 Smooth expansion transitions | 🔧 Configurable word count    | 💫 Gradient overlays          |
+| 🌐 Responsive design           | 🖋 Custom button labels       | ✨ Interactive hover states   |
 
-### `npm test`
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Quick Start
 
-### `npm run build`
+### Prerequisites
+- Node.js ≥16.x
+- npm ≥8.x
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
+```bash
+git clone https://github.com/ihsansaif313/Text-Expander-React.git
+cd Text-Expander-React
+npm install
+npm start
+```
+#🪐 Component Usage
+```bash
+<TextExpander
+  collapsedNumWords={15}
+  expandButtonText="Reveal Cosmic Secrets"
+  buttonColor="#7C3AED"
+  className="nebula-effect"
+>
+  {spaceContent}
+</TextExpander>
+```
+# 🌠 Customization Options
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<div align="center">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Property             | Description                          | Default      | Example Values         |
+|----------------------|--------------------------------------|--------------|------------------------|
+| `collapsedNumWords`  | Initial visible word count           | `5`          | `10`, `20`, `30`       |
+| `buttonColor`        | Gradient button color                | `#16a34a`    | `#7C3AED`, `#DB2777`   |
+| `expandButtonText`   | Expansion trigger text               | `Show more`  | `Expand`, `Read more`  |
+| `className`          | Additional CSS classes               | `""`         | `custom-style`         |
 
-### `npm run eject`
+</div>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🌌 Technical Architecture
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```mermaid
+graph TD
+    A[React Component] --> B[State Management]
+    A --> C[Prop Customization]
+    A --> D[CSS Animations]
+    B --> E[Expand/Collapse Logic]
+    C --> F[Color Theming]
+    D --> G[Particle Effects]
+    D --> H[Gradient Overlays]
+```
+## License 📄
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Distributed under the MIT License. See `LICENSE` for more information.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Text-Expander-React
+👨💻 **Created by IHSAN SAIF**  
+📧 **Contact:** [ihsansaifedwardion@gmail.com]  
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-blue?style=flat&logo=github)]([https://github.com/ihsansaif313](https://github.com/ihsansaif313))
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-%230A66C2?style=flat&logo=linkedin)]([https://linkedin.com/in/ihsansaif313](https://www.linkedin.com/in/its-saif-products )
